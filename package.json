@@ -1,0 +1,14 @@
+{
+  "name": "crt-argv",
+  "version": "1.0.0",
+  "description": "Windows CRT 普通参数解析与往返编码后端（TypeScript + Node + SQLite）",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/known.test.js dist/test/roundtrip.test.js dist/test/api.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/demo.js"
+  }
+}
